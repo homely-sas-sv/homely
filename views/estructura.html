@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gobierno Corporativo - HOMELY S.A.S.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ebe1d6",
+                        "tertiary-container": "#af9066",
+                        "tertiary": "#745a34",
+                        "primary-fixed": "#ffdbca",
+                        "tertiary-fixed-dim": "#e4c193",
+                        "surface-tint": "#9b4509",
+                        "inverse-on-surface": "#ffeee0",
+                        "background": "#fff8f4",
+                        "on-surface-variant": "#554339",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#fdebdc",
+                        "outline-variant": "#dcc1b5",
+                        "secondary": "#645d55",
+                        "surface-container-high": "#f7e5d7",
+                        "on-secondary-fixed-variant": "#4c463e",
+                        "primary": "#9b4509",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fff8f4",
+                        "primary-fixed-dim": "#ffb690",
+                        "on-tertiary-container": "#3e2a08",
+                        "on-background": "#231a11",
+                        "surface-container-highest": "#f1dfd1",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#291800",
+                        "surface-variant": "#f1dfd1",
+                        "surface-container-low": "#fff1e7",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff8f4",
+                        "on-primary-fixed": "#331100",
+                        "on-primary-fixed-variant": "#783200",
+                        "surface-dim": "#e8d7c9",
+                        "on-secondary-fixed": "#1f1b14",
+                        "secondary-fixed-dim": "#cec5bb",
+                        "primary-container": "#e07a3e",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffddb2",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#897268",
+                        "inverse-primary": "#ffb690",
+                        "on-secondary-container": "#6a635b",
+                        "on-tertiary-fixed-variant": "#5a421f",
+                        "secondary-container": "#ebe1d6",
+                        "inverse-surface": "#392f25",
+                        "on-primary-container": "#501f00",
+                        "on-surface": "#231a11"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "gutter": "16px",
+                        "base": "8px",
+                        "lg": "40px",
+                        "xl": "64px",
+                        "margin-mobile": "20px",
+                        "md": "24px",
+                        "max-width-content": "1200px",
+                        "margin-desktop": "auto",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fff8f4; color: #231a11; }
+        .soft-shadow { box-shadow: 0px 4px 20px rgba(74, 63, 53, 0.08); }
+        .hover-lift:hover { transform: translateY(-2px); box-shadow: 0px 8px 24px rgba(74, 63, 53, 0.12); }
+    </style>
+</head>
+<body class="bg-background min-h-screen font-body-md text-on-background antialiased flex flex-col md:flex-row overflow-x-hidden">
+<!-- SideNavBar -->
+<nav class="hidden md:flex h-screen w-80 fixed left-0 top-0 overflow-y-auto bg-surface-container shadow-sm flex-col py-md px-gutter z-40">
+<div class="mb-lg px-sm">
+<h1 class="font-display text-headline-lg text-primary font-black tracking-tight">HOMELY S.A.S.</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Executive Pitch 2026</p>
+</div>
+<ul class="flex flex-col gap-xs flex-1">
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="presentation_play">view_in_ar_new</span>
+<span class="font-label-md text-label-md">Portada</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-label-md text-label-md">Justificación S.A.S.</span>
+</a>
+</li>
+<li>
+<!-- Active Tab -->
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-secondary-container/50 translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance" data-weight="fill" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<span class="font-label-md text-label-md">Gobierno Corporativo</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-label-md text-label-md">Capital Social</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="business_center">business_center</span>
+<span class="font-label-md text-label-md">Modelo de Negocio</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-md text-label-md">Viabilidad</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+<span class="font-label-md text-label-md">Roadmap</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-label-md text-label-md">Blindaje Legal</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+<span class="font-label-md text-label-md">Protección Datos</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 group" href="#">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Conclusión</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto pt-md border-t border-outline-variant/30 flex flex-col gap-sm">
+<button class="bg-primary-container text-on-primary w-full py-sm rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-opacity">Contact Support</button>
+<div class="flex flex-col gap-xs mt-sm">
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Ajustes</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-label-md text-label-md">Cerrar Sesión</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-80 pt-20 md:pt-24 px-margin-mobile md:px-lg pb-xl max-w-max-width-content mx-margin-desktop relative">
+<!-- TopAppBar (Desktop) -->
+<header class="hidden md:flex fixed top-0 right-0 w-[calc(100%-320px)] h-20 bg-surface items-center justify-between px-lg max-w-full z-30 shadow-[0_1px_0_0_rgba(220,193,181,0.5)]">
+<div class="flex-1"></div> <!-- Spacer for layout if needed -->
+<div class="flex items-center gap-md">
+<button class="font-label-md text-label-md text-primary font-bold bg-primary-container/10 px-md py-sm rounded-full hover:bg-primary-container/20 transition-colors">
+                    Exportar PDF
+                </button>
+<button class="font-label-md text-label-md text-on-primary bg-primary-container px-md py-sm rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity flex items-center gap-xs">
+                    Presentar
+                    <span class="material-symbols-outlined text-sm" data-icon="play_arrow">play_arrow</span>
+</button>
+<div class="flex items-center gap-xs text-on-surface-variant ml-sm">
+<button class="p-2 rounded-full hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined" data-icon="share">share</span></button>
+<button class="p-2 rounded-full hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined" data-icon="more_vert">more_vert</span></button>
+</div>
+</div>
+</header>
+<!-- Slide Content -->
+<div class="animate-fade-in-up">
+<div class="mb-lg">
+<span class="text-primary font-label-md tracking-wider uppercase mb-2 block">Slide 3</span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">3. Estructura Accionaria</h2>
+<p class="font-body-lg text-on-surface-variant max-w-3xl">Visión transparente de la conformación social y del régimen de representación legal unipersonal para la agilidad operativa.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-md">
+<!-- Partners Table Card -->
+<div class="lg:col-span-2 bg-on-secondary rounded-xl soft-shadow p-md lg:p-lg border border-outline-variant/30 flex flex-col h-full">
+<div class="flex items-center justify-between mb-md">
+<h3 class="font-headline-md text-headline-md text-on-background flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+                            Socios Fundadores
+                        </h3>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/40">
+<th class="py-sm px-xs font-label-md text-on-surface-variant uppercase text-xs tracking-wider">Nombre</th>
+<th class="py-sm px-xs font-label-md text-on-surface-variant uppercase text-xs tracking-wider">Rol Propuesto</th>
+<th class="py-sm px-xs font-label-md text-on-surface-variant uppercase text-xs tracking-wider text-right">Identificación (DUI)</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-on-background">
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-sm px-xs font-medium">William Josué Guandique Rivera</td>
+<td class="py-sm px-xs"><span class="inline-flex items-center gap-1 bg-primary-container/10 text-primary px-2 py-1 rounded text-sm font-semibold">Rep Legal</span></td>
+<td class="py-sm px-xs text-right text-on-surface-variant font-mono text-sm">06945921-6</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-sm px-xs font-medium">Daniel Antonio Orellana Zelaya</td>
+<td class="py-sm px-xs text-on-surface-variant">Accionista</td>
+<td class="py-sm px-xs text-right text-on-surface-variant font-mono text-sm">06792697-4</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-sm px-xs font-medium">Briseily Yamileth Solórzano Hernández</td>
+<td class="py-sm px-xs"><span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2 py-1 rounded text-sm font-semibold">Rep Legal Suplente</span></td>
+<td class="py-sm px-xs text-right text-on-surface-variant font-mono text-sm">06784507-1</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-sm px-xs font-medium">Yohana Griselda Villalobos Segovia</td>
+<td class="py-sm px-xs text-on-surface-variant">Accionista</td>
+<td class="py-sm px-xs text-right text-on-surface-variant font-mono text-sm">06619334-0</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-sm px-xs font-medium">Cristian Ernesto Valles Flores</td>
+<td class="py-sm px-xs text-on-surface-variant">Accionista</td>
+<td class="py-sm px-xs text-right text-on-surface-variant font-mono text-sm">06499554-2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Admin Regime Card -->
+<div class="bg-on-secondary rounded-xl soft-shadow p-md lg:p-lg border border-outline-variant/30 flex flex-col relative overflow-hidden group">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-surface-container-high rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+<h3 class="font-headline-md text-headline-md text-on-background flex items-center gap-sm mb-md relative z-10">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="account_circle">account_circle</span>
+                        Régimen de Administración
+                    </h3>
+<div class="flex-1 flex flex-col justify-center relative z-10">
+<div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/20 mb-md">
+<h4 class="font-label-md text-primary font-bold mb-xs uppercase tracking-wider text-sm">Modelo Elegido</h4>
+<p class="font-headline-md text-on-background font-bold leading-tight">Representación Legal Unipersonal</p>
+</div>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            La representación judicial y extrajudicial corresponde a William Josué Guandique Rivera como Representante Legal. Briseily Yamileth Solórzano Hernández actuará como suplente en caso de ausencia, impedimento o renuncia.
+                        </p>
+<div class="flex items-center gap-sm text-sm text-on-surface-variant bg-surface px-sm py-xs rounded border border-outline-variant/30 w-fit">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="verified">verified</span>
+<span>Estatutos adaptados a la Ley S.A.S.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+<script src="../pitch-navigation.js"></script>
+</body></html>

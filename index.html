@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HOMELY S.A.S. - Perfil Corporativo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ebe1d6",
+                        "tertiary-container": "#af9066",
+                        "tertiary": "#745a34",
+                        "primary-fixed": "#ffdbca",
+                        "tertiary-fixed-dim": "#e4c193",
+                        "surface-tint": "#9b4509",
+                        "inverse-on-surface": "#ffeee0",
+                        "background": "#fff8f4",
+                        "on-surface-variant": "#554339",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#fdebdc",
+                        "outline-variant": "#dcc1b5",
+                        "secondary": "#645d55",
+                        "surface-container-high": "#f7e5d7",
+                        "on-secondary-fixed-variant": "#4c463e",
+                        "primary": "#9b4509",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fff8f4",
+                        "primary-fixed-dim": "#ffb690",
+                        "on-tertiary-container": "#3e2a08",
+                        "on-background": "#231a11",
+                        "surface-container-highest": "#f1dfd1",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#291800",
+                        "surface-variant": "#f1dfd1",
+                        "surface-container-low": "#fff1e7",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff8f4",
+                        "on-primary-fixed": "#331100",
+                        "on-primary-fixed-variant": "#783200",
+                        "surface-dim": "#e8d7c9",
+                        "on-secondary-fixed": "#1f1b14",
+                        "secondary-fixed-dim": "#cec5bb",
+                        "primary-container": "#e07a3e",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffddb2",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#897268",
+                        "inverse-primary": "#ffb690",
+                        "on-secondary-container": "#6a635b",
+                        "on-tertiary-fixed-variant": "#5a421f",
+                        "secondary-container": "#ebe1d6",
+                        "inverse-surface": "#392f25",
+                        "on-primary-container": "#501f00",
+                        "on-surface": "#231a11"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "gutter": "16px",
+                        "base": "8px",
+                        "lg": "40px",
+                        "xl": "64px",
+                        "margin-mobile": "20px",
+                        "md": "24px",
+                        "max-width-content": "1200px",
+                        "margin-desktop": "auto",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Soft, organic shadows */
+        .shadow-organic {
+            box-shadow: 0px 4px 20px rgba(74, 63, 53, 0.08);
+        }
+        .shadow-organic-hover:hover {
+            box-shadow: 0px 8px 30px rgba(74, 63, 53, 0.12);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex">
+<!-- SideNavBar (Desktop Only) -->
+<nav class="h-screen w-80 fixed left-0 top-0 overflow-y-auto bg-surface-container shadow-sm hidden md:flex flex-col py-md px-gutter z-20">
+<!-- Header -->
+<div class="mb-lg px-sm">
+<h1 class="font-display text-headline-lg text-primary font-black mb-xs">HOMELY S.A.S.</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Executive Pitch 2026</p>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 flex flex-col gap-xs">
+<!-- Active Tab: Portada -->
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-secondary-container/50 translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="presentation_play" data-weight="fill">view_in_ar_new</span>
+<span class="font-label-md text-label-md">Portada</span>
+</a>
+<!-- Inactive Tabs -->
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-label-md text-label-md">Justificación S.A.S.</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+<span class="font-label-md text-label-md">Gobierno Corporativo</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-label-md text-label-md">Capital Social</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="business_center">business_center</span>
+<span class="font-label-md text-label-md">Modelo de Negocio</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-md text-label-md">Viabilidad</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+<span class="font-label-md text-label-md">Roadmap</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-label-md text-label-md">Blindaje Legal</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+<span class="font-label-md text-label-md">Protección Datos</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Conclusión</span>
+</a>
+</div>
+<!-- Footer Actions -->
+<div class="mt-auto pt-lg border-t border-outline-variant flex flex-col gap-xs">
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg font-bold mb-md hover:opacity-90 transition-opacity">Contact Support</button>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Ajustes</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-label-md text-label-md">Cerrar Sesión</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<div class="flex-1 md:ml-80 flex flex-col min-h-screen bg-background">
+<!-- TopAppBar (Desktop) -->
+<header class="hidden md:flex fixed top-0 right-0 w-[calc(100%-320px)] h-20 bg-surface items-center justify-between px-lg max-w-full z-10">
+<div class="flex items-center gap-md">
+<!-- Mobile menu toggle placeholder -->
+</div>
+<div class="flex items-center gap-md">
+<button class="flex items-center justify-center p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+<button class="flex items-center justify-center p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+<button class="font-label-md text-label-md border-2 border-primary-container text-primary-container px-4 py-2 rounded-lg hover:bg-surface-container-low transition-colors">Exportar PDF</button>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-90 transition-opacity">Presentar</button>
+</div>
+</header>
+<!-- Mobile Header (Visible only on md:hidden) -->
+<header class="md:hidden flex items-center justify-between p-margin-mobile bg-surface sticky top-0 z-10">
+<h1 class="font-display text-headline-lg-mobile text-primary font-bold">HOMELY</h1>
+<button class="p-2 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 p-margin-mobile md:p-lg md:pt-32 max-w-max-width-content mx-margin-desktop w-full">
+<!-- Page Header -->
+<div class="mb-xl">
+<h2 class="font-display text-headline-lg md:text-display text-on-background mb-sm">Perfil Corporativo</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Portada y Perfil Mercantil estructurado para proyección 2026 en el mercado salvadoreño.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-md">
+<!-- Hero Image Card -->
+<div class="col-span-1 md:col-span-8 bg-surface rounded-xl shadow-organic overflow-hidden flex flex-col h-full min-h-[300px]">
+<div class="bg-cover bg-center w-full h-48 md:h-64 flex-shrink-0" data-alt="A warm, modern architectural rendering of a modern commercial plaza in San Miguel, El Salvador, bathed in golden hour sunlight. The facade features earthy terracotta accents and clean modern geometric lines. Lush green tropical plants frame the entrance. The lighting is high-key and welcoming, embodying a trusted, community-focused modern SaaS brand aesthetic with natural earth tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkh2ZpezUpLzErr2woP9Ut5IloeV9w0Dk-dO_2-BrfiXuvkEmViAmQ9xrZHgtzI5eZ3kszKDszjBFEqZUR9zlVLTPzpLMY3LOPSsn7F_WxZy9By5IsurO2QVwPwtupVTHS66VDM-9Fj1eND2lvzkfNAGbBLL5P_3R4CELlC6ZihaDRd5ogJPn7Fx1A8wW9zbnBMDr2aNpoCpWB6yEY4-qmyqXhDGBPzpEiHWi7masP-mfoiyYOWOuDCg')"></div>
+<div class="p-md flex-1 flex flex-col justify-center">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-primary-container" data-icon="business" data-weight="fill">business</span>
+<h3 class="font-headline-md text-headline-md text-on-background">HOMELY</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">SOCIEDAD POR ACCIONES SIMPLIFICADA</p>
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full self-start">
+<div class="w-6 h-6 rounded-full bg-[#829E87] flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]" data-icon="check">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-[#4A5D4E] font-bold tracking-wide">VERIFICADO 2026</span>
+</div>
+</div>
+</div>
+<!-- Executive Summary Card -->
+<div class="col-span-1 md:col-span-4 bg-surface rounded-xl shadow-organic p-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="person_apron" data-weight="fill">person_apron</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-background mb-sm">Representación Legal</h4>
+<p class="font-body-lg text-body-lg text-primary font-medium mb-lg">William Josué Guandique Rivera</p>
+</div>
+<div class="bg-surface-container-low p-sm rounded-lg border border-outline-variant/30">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-tertiary-container text-sm" data-icon="school">school</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Referencia Institucional</span>
+</div>
+<p class="font-body-md text-body-md text-on-background font-medium">UGB</p>
+</div>
+</div>
+<!-- Geographic Footprint Card -->
+<div class="col-span-1 md:col-span-12 bg-surface rounded-xl shadow-organic p-md mt-md">
+<h4 class="font-headline-md text-headline-md text-on-background mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="pin_drop" data-weight="fill">pin_drop</span>
+                        Presencia Geográfica - San Miguel
+                    </h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Sede Central -->
+<div class="flex gap-md p-md rounded-xl bg-background border border-outline-variant/50 shadow-organic-hover transition-all duration-300">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A close-up, warm, modern architectural detail shot of the entrance to Plaza Minerva. The scene features natural stone textures, terracotta-colored structural beams, and clean glass panels reflecting bright, inviting daylight. The aesthetic is modern, approachable, and deeply rooted in earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDixA1IPvQgkf46dGB_cdJ5WujxgnhnOmFohiA3UnGZ2n7EGbnX8-ZWT6JE7U4qFpurpbUcZ_Xha204yiJaDkX5sr1fkWxMWZktloGgdNZ0VJoyH6MfzjnGReLRN8dMJVDETdVDYKX4OgiKRm9pXwV-M2YNsIBbIUoSlkddP2DeXkrJFu7lIU6SEJiRz5azrrDNbcM3GSkr94rTm2-p0JdZSzdxfYdOZoGL244wHY4wgxDXE28qjhCF4w"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-xs">Sede Central</span>
+<p class="font-body-lg text-body-lg text-on-background font-medium mb-xs">Plaza Minerva</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Centro operativo y administrativo principal para la zona oriental.</p>
+</div>
+</div>
+<!-- Sucursal Cliente -->
+<div class="flex gap-md p-md rounded-xl bg-background border border-outline-variant/50 shadow-organic-hover transition-all duration-300">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A welcoming, brightly lit storefront detail in Plaza Buenos Aires. The facade mixes warm wood slats with smooth white concrete. Potted native plants sit by the entrance. The lighting is sunny and optimistic, reflecting a trustworthy, modern, community-centric business environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj-AgUFsWwkoc1FLljhK6ILniPxRZw2fxmfqAaytLWFr_n1NnqIcrNSrbRHDl_z46C4MsPm36o1pqgI86gM-_rw4nrZfA22sDbOeLBWubgFrkQJ80aibmhddglWosChTNmxwJutUHK4M7KwQGp7JFSpCRf2Ypu8VCLrQGeVVBYXMRnKt4cIV5xehUD40sKLB2b5to82YjXDMFYnSvnQu00Jph9wRWFUvK6TJSW_S6skU92AuvbJ2BnYw"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider block mb-xs">Oficina Administrativa</span>
+<p class="font-body-lg text-body-lg text-on-background font-medium mb-xs">Plaza Buenos Aires</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Oficina administrativa para la gestión de la plataforma, verificación de técnicos y atención al cliente.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script src="pitch-navigation.js"></script>
+</body></html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>6. Viabilidad Económica y Financiera (2026) - HOMELY S.A.S.</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ebe1d6",
+                    "tertiary-container": "#af9066",
+                    "tertiary": "#745a34",
+                    "primary-fixed": "#ffdbca",
+                    "tertiary-fixed-dim": "#e4c193",
+                    "surface-tint": "#9b4509",
+                    "inverse-on-surface": "#ffeee0",
+                    "background": "#fff8f4",
+                    "on-surface-variant": "#554339",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#fdebdc",
+                    "outline-variant": "#dcc1b5",
+                    "secondary": "#645d55",
+                    "surface-container-high": "#f7e5d7",
+                    "on-secondary-fixed-variant": "#4c463e",
+                    "primary": "#9b4509",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fff8f4",
+                    "primary-fixed-dim": "#ffb690",
+                    "on-tertiary-container": "#3e2a08",
+                    "on-background": "#231a11",
+                    "surface-container-highest": "#f1dfd1",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#291800",
+                    "surface-variant": "#f1dfd1",
+                    "surface-container-low": "#fff1e7",
+                    "on-error-container": "#93000a",
+                    "surface": "#fff8f4",
+                    "on-primary-fixed": "#331100",
+                    "on-primary-fixed-variant": "#783200",
+                    "surface-dim": "#e8d7c9",
+                    "on-secondary-fixed": "#1f1b14",
+                    "secondary-fixed-dim": "#cec5bb",
+                    "primary-container": "#e07a3e",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffddb2",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline": "#897268",
+                    "inverse-primary": "#ffb690",
+                    "on-secondary-container": "#6a635b",
+                    "on-tertiary-fixed-variant": "#5a421f",
+                    "secondary-container": "#ebe1d6",
+                    "inverse-surface": "#392f25",
+                    "on-primary-container": "#501f00",
+                    "on-surface": "#231a11"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "gutter": "16px",
+                    "base": "8px",
+                    "lg": "40px",
+                    "xl": "64px",
+                    "margin-mobile": "20px",
+                    "md": "24px",
+                    "max-width-content": "1200px",
+                    "margin-desktop": "auto",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                    "display": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(74, 63, 53, 0.08);
+        }
+        .soft-shadow-hover:hover {
+            box-shadow: 0px 8px 30px rgba(74, 63, 53, 0.12);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col h-screen w-80 fixed left-0 top-0 overflow-y-auto bg-surface-container shadow-sm py-md px-gutter z-50">
+<!-- Brand / Header -->
+<div class="flex items-center gap-sm mb-lg px-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined icon-fill">home</span>
+</div>
+<div>
+<h1 class="font-display text-headline-md text-primary font-black leading-none">HOMELY S.A.S.</h1>
+<p class="font-body-md text-label-sm text-on-surface-variant">Executive Pitch 2026</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<ul class="flex-1 flex flex-col gap-xs">
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">view_in_ar_new</span>
+<span class="font-label-md text-label-md">Portada</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-label-md text-label-md">Justificación S.A.S.</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">account_balance</span>
+<span class="font-label-md text-label-md">Gobierno Corporativo</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-md text-label-md">Capital Social</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">business_center</span>
+<span class="font-label-md text-label-md">Modelo de Negocio</span>
+</a>
+</li>
+<li>
+<!-- Active Item -->
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-secondary-container/50 translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined icon-fill">analytics</span>
+<span class="font-label-md text-label-md">Viabilidad</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">timeline</span>
+<span class="font-label-md text-label-md">Roadmap</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="font-label-md text-label-md">Blindaje Legal</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">security</span>
+<span class="font-label-md text-label-md">Protección Datos</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">verified</span>
+<span class="font-label-md text-label-md">Conclusión</span>
+</a>
+</li>
+</ul>
+<!-- Footer Actions -->
+<div class="mt-auto pt-md border-t border-outline-variant flex flex-col gap-xs">
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Ajustes</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:bg-secondary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md text-label-md">Cerrar Sesión</span>
+</a>
+<button class="mt-sm w-full bg-primary-container text-on-primary font-label-md text-label-md h-12 rounded-lg font-bold hover:bg-primary transition-colors">
+                Contact Support
+            </button>
+</div>
+</nav>
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-full md:w-[calc(100%-320px)] h-20 bg-surface border-b border-outline-variant flex items-center justify-between px-lg max-w-full z-40">
+<div class="flex items-center md:hidden">
+<h2 class="font-display text-headline-md text-primary font-bold">HOMELY S.A.S.</h2>
+</div>
+<div class="hidden md:flex flex-1">
+<!-- Placeholder for spacing -->
+</div>
+<div class="flex items-center gap-md">
+<!-- Search Bar -->
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container rounded-full border-none focus:ring-2 focus:ring-primary text-body-md text-on-background w-64" placeholder="Buscar..." type="text"/>
+</div>
+<!-- Actions -->
+<button class="text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-all">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-all">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+<div class="h-6 w-px bg-outline-variant hidden sm:block"></div>
+<button class="hidden sm:block px-4 py-2 text-primary font-label-md text-label-md border-2 border-primary rounded-full hover:bg-primary-fixed transition-colors">
+                Exportar PDF
+            </button>
+<button class="px-6 py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-full font-bold hover:bg-primary transition-colors shadow-sm">
+                Presentar
+            </button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-lg md:pl-80 px-margin-mobile md:px-lg max-w-max-width-content mx-margin-desktop min-h-screen">
+<div class="mb-xl mt-md">
+<span class="inline-block px-3 py-1 bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm rounded-full mb-2">Slide 6</span>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
+                6. Viabilidad Económica y Financiera
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                Análisis detallado de la inversión inicial requerida y el punto de equilibrio proyectado para el modelo operativo optimizado.
+            </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- Total Investment Card -->
+<div class="md:col-span-4 bg-on-secondary rounded-xl p-md soft-shadow soft-shadow-hover transition-all flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-32 h-32 bg-primary-fixed rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-2 text-on-surface-variant">
+<span class="material-symbols-outlined">monetization_on</span>
+<h3 class="font-label-md text-label-md">Inversión Inicial Total</h3>
+</div>
+<div class="font-display text-[56px] leading-[64px] font-black text-primary mt-sm">
+                        $25k
+                    </div>
+<p class="font-body-md text-body-md text-secondary mt-2">Capital semilla requerido para lanzar el MVP y asegurar operaciones iniciales.</p>
+</div>
+<div class="mt-lg relative z-10">
+<button class="flex items-center gap-2 text-tertiary font-label-md text-label-md hover:text-primary transition-colors">
+                        Ver flujo de caja detallado <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Breakdown Grid -->
+<div class="md:col-span-8 bg-on-secondary rounded-xl p-md soft-shadow">
+<h3 class="font-headline-md text-headline-md text-on-background mb-md flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container">pie_chart</span>
+                    Desglose de Inversión
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-sm">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary-container">rocket_launch</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$8.0k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">MVP &amp; Plataforma</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 32%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary">devices</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$4.2k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">Equipos de Cómputo</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 16.8%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-secondary">chair</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$1.8k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">Mobiliario y Equipo de Oficina</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 7.2%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-on-surface-variant">vpn_key</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$2.4k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">Locales Arrendados</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-on-surface-variant h-1.5 rounded-full" style="width: 9.6%"></div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-outline">inventory_2</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$1.1k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">Activos Intangibles</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-outline h-1.5 rounded-full" style="width: 4.4%"></div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm flex flex-col gap-1 hover:border-primary transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-error">trending_up</span>
+<span class="font-label-md text-label-md font-bold text-on-background">$7.5k</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mt-2">Capital de Trabajo</h4>
+<div class="w-full bg-secondary-container h-1.5 rounded-full mt-1">
+<div class="bg-error h-1.5 rounded-full" style="width: 30%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Break-even Card -->
+<div class="md:col-span-12 bg-surface-container-high rounded-xl p-md border border-outline-variant flex flex-col md:flex-row items-center gap-lg soft-shadow mt-sm">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#4b6b5d]/10 rounded-full text-[#4b6b5d] font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-sm icon-fill">check_circle</span>
+                        Modelo Optimizado
+                    </div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-2">Punto de Equilibrio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Para alcanzar la rentabilidad operativa mensual, se requiere un volumen manejable de servicios, demostrando la alta viabilidad del modelo de negocio en la etapa temprana.
+                    </p>
+</div>
+<div class="flex-none flex items-center gap-4 bg-on-secondary p-sm rounded-lg shadow-sm w-full md:w-auto justify-center">
+<div class="text-center px-4 border-r border-outline-variant">
+<div class="font-display text-[40px] font-black text-primary leading-none">310–330</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1 uppercase tracking-wider">Servicios / Mes</div>
+</div>
+<div class="text-center px-4">
+<div class="font-display text-[40px] font-black text-tertiary leading-none">10–11</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1 uppercase tracking-wider">Diarios</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script src="../pitch-navigation.js"></script>
+</body></html>
