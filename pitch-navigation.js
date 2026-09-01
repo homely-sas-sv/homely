@@ -20,6 +20,7 @@
   const currentIndex = Math.max(0, sections.findIndex(([, path]) => currentPath.endsWith(path)));
   const resolve = (path) => location.pathname.includes('/views/') ? `../${path}` : path;
   const icon = (name) => `<span class="material-symbols-outlined" aria-hidden="true">${name}</span>`;
+  const sectionIcons = ['view_in_ar_new', 'history_edu', 'groups', 'monitoring', 'target', 'gavel', 'account_balance', 'payments', 'business_center', 'analytics', 'timeline', 'gavel', 'security', 'verified'];
 
   const style = document.createElement('style');
   style.textContent = `
@@ -46,6 +47,23 @@
   const nav = document.querySelector('nav');
   if (nav) {
     nav.classList.add('pitch-nav');
+    // Las vistas nuevas usan un contenedor vacío. Solo ahí construimos el menú;
+    // las vistas existentes conservan intacta su barra lateral original.
+    const menuContainer = nav.querySelector('ul.flex-1, div.flex-1');
+    if (menuContainer && !nav.querySelector('a')) {
+      sections.forEach(([name, path], index) => {
+        const link = document.createElement('a');
+        link.href = resolve(path);
+        link.className = `flex items-center gap-sm px-sm py-sm rounded-lg transition-colors duration-200 ${index === currentIndex ? 'text-primary font-bold border-r-4 border-primary bg-secondary-container/50' : 'text-on-surface-variant hover:text-primary hover:bg-secondary-container'}`;
+        link.setAttribute('aria-current', index === currentIndex ? 'page' : 'false');
+        link.innerHTML = `${icon(sectionIcons[index])}<span class="font-label-md text-label-md">${name}</span>`;
+        if (menuContainer.tagName === 'UL') {
+          const item = document.createElement('li');
+          item.append(link);
+          menuContainer.append(item);
+        } else menuContainer.append(link);
+      });
+    }
     nav.querySelectorAll('a, button').forEach(item => {
       const label = item.textContent.trim().replace(/\s+/g, ' ');
       if (/Contact Support|Ajustes|Cerrar Sesión/.test(label)) item.remove();
@@ -58,25 +76,6 @@
       link.classList.toggle('pitch-active', index === currentIndex);
       link.setAttribute('aria-current', index === currentIndex ? 'page' : 'false');
     });
-    // Las vistas originales tienen un menú estático. Añadimos aquí las nuevas
-    // secciones para conservar una sola navegación completa en todo el pitch.
-    const existing = new Set(Array.from(nav.querySelectorAll('a')).map(link => link.textContent.trim().replace(/\s+/g, ' ')));
-    const menuContainer = nav.querySelector('ul.flex-1, div.flex-1');
-    if (menuContainer) {
-      sections.forEach(([name, path], index) => {
-        if (existing.has(name)) return;
-        const link = document.createElement('a');
-        link.href = resolve(path);
-        link.className = `flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 ${index === currentIndex ? 'text-primary font-bold border-r-4 border-primary bg-secondary-container/50' : ''}`;
-        link.setAttribute('aria-current', index === currentIndex ? 'page' : 'false');
-        link.innerHTML = `${icon(index === 2 ? 'groups' : index === 3 ? 'monitoring' : index === 4 ? 'target' : 'gavel')}<span class="font-label-md text-label-md">${name}</span>`;
-        if (menuContainer.tagName === 'UL') {
-          const item = document.createElement('li');
-          item.append(link);
-          menuContainer.append(item);
-        } else menuContainer.append(link);
-      });
-    }
     Array.from(nav.querySelectorAll('div, ul, li')).reverse().forEach(item => {
       if (!item.textContent.trim() && !item.querySelector('img, svg')) item.remove();
     });
