@@ -47,10 +47,11 @@
   const nav = document.querySelector('nav');
   if (nav) {
     nav.classList.add('pitch-nav');
-    // Las vistas nuevas usan un contenedor vacío. Solo ahí construimos el menú;
-    // las vistas existentes conservan intacta su barra lateral original.
+    // Una fuente de verdad para el menú evita duplicados y hace accesibles las
+    // nuevas vistas desde cualquier pantalla del pitch.
     const menuContainer = nav.querySelector('ul.flex-1, div.flex-1');
-    if (menuContainer && !nav.querySelector('a')) {
+    if (menuContainer) {
+      menuContainer.replaceChildren();
       sections.forEach(([name, path], index) => {
         const link = document.createElement('a');
         link.href = resolve(path);
