@@ -2,6 +2,10 @@
   const sections = [
     ['Portada', 'index.html'],
     ['Justificación S.A.S.', 'views/justificacion.html'],
+    ['Perfil de socios', 'views/perfilSocios.html'],
+    ['Proyección de inversión', 'views/proyeccionInversion.html'],
+    ['Mercado meta', 'views/mercadoMeta.html'],
+    ['Fundamento legal', 'views/fundamentoLegal.html'],
     ['Gobierno Corporativo', 'views/estructura.html'],
     ['Capital Social', 'views/capital.html'],
     ['Modelo de Negocio', 'views/modeloNegocio.html'],
@@ -54,6 +58,25 @@
       link.classList.toggle('pitch-active', index === currentIndex);
       link.setAttribute('aria-current', index === currentIndex ? 'page' : 'false');
     });
+    // Las vistas originales tienen un menú estático. Añadimos aquí las nuevas
+    // secciones para conservar una sola navegación completa en todo el pitch.
+    const existing = new Set(Array.from(nav.querySelectorAll('a')).map(link => link.textContent.trim().replace(/\s+/g, ' ')));
+    const menuContainer = nav.querySelector('ul.flex-1, div.flex-1');
+    if (menuContainer) {
+      sections.forEach(([name, path], index) => {
+        if (existing.has(name)) return;
+        const link = document.createElement('a');
+        link.href = resolve(path);
+        link.className = `flex items-center gap-sm px-sm py-sm rounded-lg text-on-surface-variant hover:text-primary hover:bg-secondary-container transition-colors duration-200 ${index === currentIndex ? 'text-primary font-bold border-r-4 border-primary bg-secondary-container/50' : ''}`;
+        link.setAttribute('aria-current', index === currentIndex ? 'page' : 'false');
+        link.innerHTML = `${icon(index === 2 ? 'groups' : index === 3 ? 'monitoring' : index === 4 ? 'target' : 'gavel')}<span class="font-label-md text-label-md">${name}</span>`;
+        if (menuContainer.tagName === 'UL') {
+          const item = document.createElement('li');
+          item.append(link);
+          menuContainer.append(item);
+        } else menuContainer.append(link);
+      });
+    }
     Array.from(nav.querySelectorAll('div, ul, li')).reverse().forEach(item => {
       if (!item.textContent.trim() && !item.querySelector('img, svg')) item.remove();
     });
