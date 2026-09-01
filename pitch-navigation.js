@@ -77,6 +77,14 @@
     if (heading) heading.textContent = visibleTitle;
   }
 
+  // Los títulos se presentan sin la numeración interna de las diapositivas.
+  document.querySelectorAll('main h1, main h2').forEach(heading => {
+    heading.textContent = heading.textContent.replace(/^\s*\d+\.\s*/, '');
+  });
+  document.querySelectorAll('main *').forEach(element => {
+    if (element.children.length === 0 && /^\s*slide\s+\d+\s*$/i.test(element.textContent)) element.hidden = true;
+  });
+
   const menu = document.createElement('button');
   menu.className = 'pitch-menu';
   menu.type = 'button';
